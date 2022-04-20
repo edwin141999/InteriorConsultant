@@ -1,0 +1,166 @@
+body {
+    background-color: #181719;
+    height: 100vh;
+}
+
+/* NAVBAR */
+header {
+    padding: 2.1em 0 0 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    background-color: #181719;
+    color: #fff;
+}
+
+#btn-home {
+    font-family: "Crimson Pro";
+    border: 1px solid #fff;
+    padding: 6px 5px;
+    font-size: 14px;
+}
+
+#div-navigation {
+    padding: 0 4.2em 0 0;
+}
+
+#btn-navigation {
+    font-family: "Montserrat";
+    font-size: 18px;
+    padding: 0 0 0 4em;
+}
+
+.btn-active {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+/* INFO SECTION */
+
+section {
+    color: #fff;
+    display: flex;
+    /* height: 100vh; */
+    align-items: center;
+    padding: 0 0 0 4em;
+}
+
+#div-left {
+    flex: 40%;
+}
+
+#h2-title {
+    font-family: "Lora";
+    font-size: 45px;
+    font-weight: 900;
+    margin: 4em 0 1em 0;
+}
+
+#span-subtitle {
+    display: flex;
+    font-family: "Montserrat";
+    font-size: 22px;
+    width: 60vh;
+}
+
+#span-more-info {
+    display: flex;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 800;
+    padding: 2.5em 0 0 0;
+}
+
+#div-right {
+    flex: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-residential {
+    width: 90%;
+    padding: 10.5em 0 0 0;
+}
+
+/* INFO USERNAME */
+
+#div-absolute {
+    position: absolute;
+    padding: 33em 0 0 50em;
+}
+
+#div-user-info {
+    position: absolute;
+    background-color: #181719;
+    padding: 1em 5.6em 2em 2em;
+    box-shadow: 0 6px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+#div-info {
+    display: flex;
+    align-items: center;
+}
+
+#img-user {
+    /* image rounded */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+}
+
+#div-p {
+}
+
+#p-name {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#p-career {
+    font-family: "Montserrat";
+    color: #828282;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#span-description {
+    display: flex;
+    font-family: "Lora";
+    font-weight: 700;
+    font-size: 22px;
+    width: 40vh;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    flex-direction: column;
+    align-items: center;
+    color: #bdbdbd;
+    padding: 14em 0 1em 0;
+}
+
+#footer-span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+    color: #a9a9a9;
+}
+
+a {
+    color: #bdbdbd;
+    font-weight: 700;
+    padding: 0px;
+}
+
+/* @media (max-width: 1000px) {
+    #div-absolute {
+        padding: 33em 0 0 30em;
+    }
+} */
