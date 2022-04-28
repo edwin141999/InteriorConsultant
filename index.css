@@ -33,6 +33,14 @@ button {
     padding: 0 0 0 4em;
 }
 
+#collapsed-navigation {
+    display: none;
+}
+
+#collapsed-btn-navigation {
+    display: none;
+}
+
 .btn-active {
     font-weight: 900;
     text-decoration: underline;
@@ -43,7 +51,6 @@ button {
 section {
     color: #fff;
     display: flex;
-    /* height: 100vh; */
     align-items: center;
     padding: 0 0 0 4em;
 }
@@ -113,9 +120,6 @@ section {
     margin-right: 1em;
 }
 
-#div-p {
-}
-
 #p-name {
     font-family: "Montserrat";
     font-size: 14px;
@@ -159,8 +163,122 @@ a {
     padding: 0px;
 }
 
-/* @media (max-width: 1000px) {
-    #div-absolute {
-        padding: 33em 0 0 30em;
+@media (max-width: 640px) {
+    body {
+        height: 0;
     }
-} */
+
+    /* NAVBAR */
+    header {
+        padding: 0 0 0 0;
+    }
+
+    #div-navigation {
+        display: none;
+    }
+
+    #collapsed-navigation {
+        display: block;
+        color: #f2f2f2;
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    /* MENU BUTTONS */
+    #collapsed-btn-navigation {
+        padding: 0;
+        position: fixed;
+        background-color: #181719;
+        height: 100vh;
+        width: 97vw;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    #div-close-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #close-navigation {
+        color: #f2f2f2;
+        font-size: 35px;
+        cursor: pointer;
+        padding-right: 10px;
+    }
+
+    #div-btn-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #btn-navigation {
+        padding: 0 0 32px 0;
+    }
+
+    /* INFO SECTION */
+    section {
+        padding: 0 0 0 0;
+        align-items: initial;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #h2-title {
+        font-size: 36px;
+        margin: 0.4em 0 0.7em 0;
+    }
+
+    #span-subtitle {
+        font-size: 14px;
+        width: 30vh;
+    }
+
+    #span-more-info {
+        font-size: 14px;
+        padding: 1.5em 0 2em 0;
+        align-items: center;
+    }
+
+    #img-residential {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+
+    /* INFO USERNAME */
+    #div-absolute {
+        padding: 29em 0 0 2.5em;
+    }
+
+    #div-user-info {
+        padding: 0 5.2em 1em 1em;
+    }
+
+    #img-user {
+        width: 40px;
+        height: 40px;
+    }
+
+    #p-name {
+        font-size: 12px;
+    }
+
+    #p-career {
+        font-size: 10px;
+    }
+
+    #span-description {
+        font-size: 18px;
+        width: 25vh;
+    }
+
+    /* FOOTER */
+
+    footer {
+        padding: 10em 0 1em 0;
+    }
+}
